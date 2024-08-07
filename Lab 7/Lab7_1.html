@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(a, b) {
+            console.log(a+b);
+        }
+        function display(a=0, b=0, callback) {
+            callback(a,b);
+        }
+        display(4, 5, add);
+        display(undefined, undefined, add); // by default it will take a=0 and b=0 bcoz we have declared in line 13
+    </script>
+</body>
+</html>

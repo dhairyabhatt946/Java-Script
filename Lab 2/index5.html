@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = parseInt(prompt("Enter a two digit number: "));
+        if (num < 10 || num > 99) {
+            alert("Invalid input. Please enter a two digit number.");
+        }
+        else {
+            var digit1 = Math.floor(num/10);
+            var digit2 = num%10;
+            var result = 1;
+            for (var i = 1; i <= digit2; i++) {
+                 result*= digit1;
+            }
+            alert(result);
+        }
+    </script>
+</body>
+
+</html>

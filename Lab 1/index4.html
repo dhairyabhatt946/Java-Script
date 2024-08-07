@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter a number for fibonacci series: "));
+        let sum=0, start=0; end=1;
+        document.write("0, 1, ");
+        while(sum<num) {
+            sum=0;
+            sum=start+end;
+            document.write(sum+", ");
+            start=end;
+            end=sum;
+        }
+    </script>
+</body>
+</html>

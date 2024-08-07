@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: silver;
+        }
+
+        .login {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            text-align: start;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 40px;
+            background-color: white;
+            border: none;
+        }
+
+        .login img {
+            width: 250px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+
+        label {
+            margin-top: 20px;
+            font-size: x-large;
+        }
+
+        input {
+            margin-top: 10px;
+            background-color: gainsboro;
+            height: 40px;
+            width: 400px;
+            border: none;
+            border-radius: 5px;
+            font-size: large;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+
+        .button button {
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+            font-size: large;
+        }
+
+        .button button:hover {
+            background-color: rgb(15, 175, 229);
+        }
+        span {
+            color: red;
+        }
+        [id^="err"] {
+            max-width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <form action=""></form>
+        <div class="logo">
+            <img src="login.png">
+        </div>
+        <div class="text">
+            <label>Enter email:</label>
+            <input type="email" placeholder="abc@gmail.com" id="email" required>
+            <span id="errMessage1"></span>
+            <label>Enter password:</label>
+            <input type="password" id="password" required>
+            <span id="errMessage2"></span>
+            <div class="button">
+                <button type="submit" id="submit" onclick="validation()">Login</button>
+            </div>
+        </div>
+        </form>
+    </div>
+
+    <script>
+        function validation() {
+            document.getElementById('email').style.border = 'none';
+            document.getElementById('errMessage1').innerHTML = "";
+            document.getElementById('password').style.border = 'none';
+                document.getElementById('errMessage2').innerHTML = '';
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            pattern1 = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            pattern2 = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/;
+            let regex = new RegExp(pattern1);
+            let regex2 = new RegExp(pattern2);
+            if(!regex.test(email)) {
+                document.getElementById('email').style.border = '3px solid red';
+                document.getElementById('errMessage1').innerHTML = "Invalid email";
+            }
+            else if(!regex2.test(password)) {
+                document.getElementById('password').style.border = '3px solid red';
+                document.getElementById('errMessage2').innerHTML = 'Password must be minimum of 6 characters, at least one uppercase letter, one lowercase';
+            }
+            else {
+                clearDisplay();
+                alert("Login successful");
+            }
+        }
+        function clearDisplay() {
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>Click</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequatur quidem distinctio eum dolorum perspiciatis, beatae deleniti, id in quasi delectus nam sit totam reiciendis quos, repellendus explicabo iusto quis?</p>
+    <div id="myDiv"></div>
+
+    <script>
+        function display(temp) {
+            document.getElementById('myDiv').innerHTML = "Mouse Event: "+temp;
+        }
+
+        document.addEventListener('click', () => display('Click'));
+        document.addEventListener('dblclick', () => display('Double Click'));
+        document.addEventListener('contextmenu', () => display('Context Menu'));
+        document.addEventListener('mousedown', () => display('Mouse Down'));
+        document.addEventListener('mouseenter', () => display('Mouse Enter'));
+        document.addEventListener('mouseleave', () => display('Mouse Leave'));
+        document.addEventListener('mousemove', () => display('Mouse Move'));
+        document.addEventListener('mouseout', () => display('Mouse Out'));
+        document.addEventListener('mouseover', () => display('Mouse Over'));
+        document.addEventListener('mouseup', () => display('Mouse Up'));
+    </script>
+</body>
+</html>

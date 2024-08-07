@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter a number: "));
+        let len = num.toString().length;
+        let sum = 0, a=num;
+        while(num!=0) {
+            let rem = parseInt(num%10);
+            sum += Math.pow(rem, len);
+            num = parseInt(num/10);
+        }
+        if(sum===a) {
+            alert("The number is an Armstrong number");
+        }
+        else {
+            alert("The number is not an Armstrong number");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        faculties = [
+            {
+                "name": "Javier Tillman I",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/258.jpg",
+                "contact": "802-433-1135 x297",
+                "id": "1"
+            },
+            {
+                "name": "Jacob Rolfson",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/623.jpg",
+                "contact": "(944) 690-1374 x22400",
+                "id": "2"
+            },
+            {
+                "name": "Carla Feil",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/101.jpg",
+                "contact": "628-904-0251 x58635",
+                "id": "3"
+            },
+            {
+                "name": "Julian Shanahan",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/412.jpg",
+                "contact": "525.640.6047 x1738",
+                "id": "4"
+            },
+            {
+                "name": "Louise Christiansen",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1118.jpg",
+                "contact": "1-791-595-5440 x64699",
+                "id": "5"
+            },
+            {
+                "name": "Isaac Larkin V",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/51.jpg",
+                "contact": "748-640-0829 x43653",
+                "id": "6"
+            },
+            {
+                "name": "Ralph Weimann",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/176.jpg",
+                "contact": "910-577-6917",
+                "id": "7"
+            },
+            {
+                "name": "Luther Hirthe",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/586.jpg",
+                "contact": "1-208-631-7089 x307",
+                "id": "8"
+            },
+            {
+                "name": "Herman Ruecker",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/215.jpg",
+                "contact": "261.804.9831 x841",
+                "id": "9"
+            },
+            {
+                "name": "Sylvia Homenick",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/550.jpg",
+                "contact": "416-517-4541 x506",
+                "id": "10"
+            },
+            {
+                "name": "Viola Streich MD",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1111.jpg",
+                "contact": "(886) 479-1929",
+                "id": "11"
+            },
+            {
+                "name": "Nicole Runolfsson V",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/502.jpg",
+                "contact": "493.800.1974 x558",
+                "id": "12"
+            },
+            {
+                "name": "Rosie Gutkowski PhD",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/232.jpg",
+                "contact": "1-815-960-7786 x99739",
+                "id": "13"
+            },
+            {
+                "name": "Tracey Hermiston Jr.",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/324.jpg",
+                "contact": "474.267.9738 x413",
+                "id": "14"
+            },
+            {
+                "name": "Richard Funk",
+                "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/50.jpg",
+                "contact": "1-633-851-1623 x68209",
+                "id": "15"
+            }
+        ]
+        document.write("<table border=1 width=100%>");
+            for(let i=0; i<faculties.length; i++) {
+                document.write("<tr align='center'>");
+                    document.write("<td>"+faculties[i].id+"</td>");
+                    document.write("<td>"+faculties[i].name+"</td>");
+                    document.write("<td> <img src="+faculties[i].avatar+"></td>");
+                    document.write("<td>"+faculties[i].contact+"</td>");
+                document.write("</tr>");
+            }
+        document.write("</table>");
+    </script>
+</body>
+
+</html>

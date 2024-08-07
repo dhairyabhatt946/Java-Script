@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        products = [
+            {
+                "name": "Bespoke Fresh Shoes",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+                "price": "97.00",
+                "id": "1"
+            },
+            {
+                "name": "Handcrafted Soft Pizza",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+                "price": "648.00",
+                "id": "2"
+            },
+            {
+                "name": "Elegant Concrete Pants",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+                "price": "341.00",
+                "id": "3"
+            },
+            {
+                "name": "Licensed Concrete Shoes",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+                "price": "882.00",
+                "id": "4"
+            },
+            {
+                "name": "Handcrafted Fresh Fish",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+                "price": "476.00",
+                "id": "5"
+            },
+            {
+                "name": "Unbranded Metal Car",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+                "price": "418.00",
+                "id": "6"
+            },
+            {
+                "name": "Bespoke Granite Chicken",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+                "price": "843.00",
+                "id": "7"
+            },
+            {
+                "name": "Refined Plastic Salad",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+                "price": "146.00",
+                "id": "8"
+            },
+            {
+                "name": "Handcrafted Wooden Car",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+                "price": "218.00",
+                "id": "9"
+            },
+            {
+                "name": "Awesome Fresh Sausages",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+                "price": "772.00",
+                "id": "10"
+            },
+            {
+                "name": "Generic Wooden Soap",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+                "price": "755.00",
+                "id": "11"
+            },
+            {
+                "name": "Gorgeous Soft Computer",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+                "price": "739.00",
+                "id": "12"
+            },
+            {
+                "name": "Modern Granite Chair",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+                "price": "763.00",
+                "id": "13"
+            },
+            {
+                "name": "Handcrafted Metal Gloves",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+                "price": "104.00",
+                "id": "14"
+            },
+            {
+                "name": "Intelligent Steel Keyboard",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+                "price": "996.00",
+                "id": "15"
+            },
+            {
+                "name": "Recycled Rubber Hat",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+                "price": "608.00",
+                "id": "16"
+            },
+            {
+                "name": "Incredible Concrete Shoes",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+                "price": "66.00",
+                "id": "17"
+            },
+            {
+                "name": "Refined Steel Bacon",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+                "price": "235.00",
+                "id": "18"
+            },
+            {
+                "name": "Sleek Metal Mouse",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+                "price": "631.00",
+                "id": "19"
+            },
+            {
+                "name": "Licensed Frozen Bacon",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+                "price": "996.00",
+                "id": "20"
+            },
+            {
+                "name": "Generic Fresh Salad",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The Football Is Good For Training And Recreational Purposes",
+                "price": "958.00",
+                "id": "21"
+            },
+            {
+                "name": "Electronic Wooden Hat",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The Football Is Good For Training And Recreational Purposes",
+                "price": "584.00",
+                "id": "22"
+            },
+            {
+                "name": "Modern Plastic Fish",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+                "price": "26.00",
+                "id": "23"
+            },
+            {
+                "name": "Sleek Cotton Sausages",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+                "price": "263.00",
+                "id": "24"
+            },
+            {
+                "name": "Recycled Soft Sausages",
+                "avatar": "https://loremflickr.com/640/480/business",
+                "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+                "price": "69.00",
+                "id": "25"
+            }
+        ]
+        document.write("<table border=1 width=100%>");
+            for(let i=0; i<products.length; i++) {
+                document.write("<tr align='center'>");
+                document.write("<td>"+products[i].id+"</td>");
+                document.write("<td>"+products[i].name+"</td>");
+                document.write("<td> <img width=30% src="+products[i].avatar+"></td>");
+                document.write("<td>"+products[i].description+"</td>");
+                document.write("<td>"+products[i].price+"</td>");
+                document.write("</tr>");
+            }
+        document.write("</table>");
+    </script>
+</body>
+
+</html>

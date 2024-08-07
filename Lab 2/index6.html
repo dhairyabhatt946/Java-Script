@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter a number: "));
+        if(num<0 || num >999) alert("out of range");
+        if(!Number.isInteger(num)) alert("Not a number");
+        let arr1 = ['zero','one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+        let arr2 = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'ninteen'];
+        let arr3 = ['twenty', 'thirty', 'fourty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninty'];
+        var result="";
+        if(num===0) {
+            result="zero";
+        }
+        if(num>=100) {
+            result += arr1[Math.floor(num/100)] +" hundred ";
+            num%=100;
+        }
+        if(num>=20) {
+            result += arr3[Math.floor(num/10)-2] + " ";
+            num%=10;
+        }
+        if(num>=10) {
+            result += arr2[Math.floor(num/10)-1] + " ";
+            num%=10;
+        }
+        if(num>0) {
+            result += arr1[num];
+        }
+        alert(result);
+    </script>
+</body>
+</html>

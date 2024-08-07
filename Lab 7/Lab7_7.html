@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Can be called before declaration
+        myFunction();
+        function myFunction() {
+            console.log("Hello");
+        }
+
+        const sayGoodbye = function () {
+            console.log("Goodbye!");
+        };
+        sayGoodbye(); // Output: Goodbye!
+
+        //cannot be called before declaration
+        const add = (a=0, b=0) => a + b;
+        console.log(add(5, 3)); // Output: 8
+
+        (function () {
+            console.log("IIFE executed");
+        })(); // Output: IIFE executed
+
+        function sub(a, b) {
+            console.log(a-b);
+        }
+        function display(a=0, b=0, callback) {
+            sub(a,b);
+            callback();
+        }
+        display(4, 5, () => {
+            console.log("anonymous");
+        });
+       
+    </script>
+</body>
+
+</html>

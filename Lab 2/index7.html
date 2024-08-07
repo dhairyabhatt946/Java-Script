@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var word = prompt("Enter a word: ");
+        word = word.toLowerCase();
+        var firstPosition, lastPosition;
+        for(var i=0; i<word.length; i++) {
+            firstPosition = word.indexOf('a');
+            lastPosition = word.lastIndexOf('a');
+        }
+        if(firstPosition===-1 || firstPosition===-1 || firstPosition===lastPosition) {
+            alert("There is no 'a' or only one 'a' in the word.");
+        }
+        else {
+            document.write("The first 'a' is at position " + (firstPosition+1) +" and the last 'a' is at position "+(lastPosition+1)+"<br/>");
+            document.write("String between = "+word.substring(firstPosition+1, lastPosition));
+        }
+    </script>
+</body>
+</html>

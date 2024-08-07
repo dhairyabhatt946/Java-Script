@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function myFunction() {
+            a = 5;// Global scope
+            var b = 10; // Functional scope. It will not work outside myFunction()
+            let c = 15; // Block scope. It will not work outside myFunction()
+            if(true) {
+                var d = 20; // It will word inside myFunction()
+                let e = 25; // It will work only inside if block
+                const f = 30; // Block scope. It will not work outside if block
+                console.log(e);
+                console.log(f);
+            }
+            console.log(b);
+            console.log(c);
+            console.log(d);
+        }
+        myFunction();
+        console.log(a);
+
+    </script>
+</body>
+</html>

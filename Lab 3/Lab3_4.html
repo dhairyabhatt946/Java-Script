@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt("Enter the size of an array: "));
+        let arr = new Array(n);
+        for (let i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("Enter element " + (i + 1) + ": "));
+        }
+        function quickSort(arr, low, high) {
+            if (low < high) {
+                let pi = partition(arr, low, high);
+
+                quickSort(arr, low, pi - 1);
+                quickSort(arr, pi + 1, high);
+            }
+        }
+        function partition(arr, low, high) {
+            let pivot = arr[high];
+            let i = low - 1;
+            for (let j = low; j < high; j++) {
+                if (arr[j] < pivot) {
+                    i++;
+                    let temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+
+                i++;
+                let temp = arr[i];
+                arr[i] = arr[high];
+                arr[high] = temp;
+                return i;
+            }
+        }
+        quickSort(arr, 0, n - 1);
+        document.write("Sorted array: ", arr);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [4,3,5,1,2];
+        console.log(arr);
+        arr.push(56);
+        console.log("push: ",arr);
+        arr.pop(); // it will return deleted element
+        console.log("pop: ",arr);
+        arr.unshift(58);
+        console.log("unshift: ",arr);
+        arr.shift(); // it will return deleted element
+        console.log("shift: ",arr);
+        new_arr = arr.slice(0,3); // it will return elements from 0th index upto 2nd index
+        console.log("slice: ",new_arr)
+        arr.splice(2,4); // it will delete all elements from 2nd index upto 4 indeices i.e, 2,3,4,5
+        console.log("splice: ",arr);
+        arr.sort(); // it will properly work for one digit numbers only
+        console.log("sort: ",arr);
+    </script>
+</body>
+</html>

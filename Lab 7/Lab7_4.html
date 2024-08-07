@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        arr = [1,2,3,4,5];
+        arr2 = [6,7,8,9,10];
+        console.log("",arr);
+        console.log("",arr2);
+        console.log("",arr.concat(arr2));
+
+        new_arr1 = arr;
+        console.log(new_arr1);
+
+        new_arr2 = [...arr];
+        console.log("",new_arr2);
+
+        mix_arr1 = [arr, arr2];
+        console.log("",mix_arr1);
+
+        mix_arr2 = [...arr, ...arr2];
+        console.log(mix_arr2);
+
+        obj1 = {
+            a: 1,
+            b: 2
+        }
+        console.log(obj1);
+
+        obj2 = {...obj1};
+        console.log(obj2);
+
+        obj3 = {...obj1, c:3};
+        console.log(obj3);
+
+        obj4 = {...obj1, ...obj2, ...obj3};
+        console.log(obj4);
+
+        obj5 = {...obj4, d:4, e:5};
+        console.log(obj5);
+    </script>
+</body>
+</html>

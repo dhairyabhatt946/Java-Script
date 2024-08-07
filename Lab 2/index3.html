@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("how many rows do you want to print?"));
+        for(let i=1; i<=num; i++) {
+            for(let j=1; j<=i; j++) {
+                document.write("*");
+            }
+            document.write("<br/>");
+        }
+        document.write("<br/>");
+        for(let i=num; i>=1; i--) {
+            for(let j=1; j<=num-i; j++) {
+                document.write("&nbsp; ");
+            }
+            for(let j=1; j<=i; j++) {
+                document.write("*");
+            }
+            document.write("<br/>");
+        }
+        document.write("<br/>");
+        for(let i=1; i<=num; i++) {
+            for(let j=1; j<=num-i; j++) {
+                document.write("&nbsp;");
+            }
+            for(let j=1; j<=(2*i)-1; j++) {
+                if(j%2==1) {
+                    document.write("*&nbsp;");
+                }
+            }
+            document.write("<br/>");
+        }
+    </script>
+</body>
+</html>
